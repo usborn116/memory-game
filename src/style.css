@@ -1,0 +1,64 @@
+
+
+body {
+    background-color: rgba(17, 117, 199, 0.76);
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  header {
+    margin-top: 20px;
+  }
+  
+  .card-container {
+    width: 100vw;
+    max-width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 100px;
+  }
+  
+  .card {
+    border: 4px solid #f1c04f;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .card p {
+    text-align: center;
+  }
+  
+  img {
+    width: 200px;
+    min-height: 200px;
+    max-height:300px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    font-size: 28px;
+    margin: 0 auto;
+  }
+  
+  .fading {
+    animation-duration: 1s;
+    animation-name: fading;
+  }
+  
+  @keyframes fading {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: transparent;
+    }
+  }
